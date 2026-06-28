@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KD World - About Us</title>
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="about.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23d44c7f'%3E%3Cpath d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14h-2v-6h2v6zm4 0h-2v-6h2v6z'/%3E%3C/svg%3E" type="image/svg+xml">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- AOS Library for scroll animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="main-header">
+        <div class="logo-container">
+            <h3 class="logo">KD World</h3>
+        </div>
+        
+        <!-- Mobile Menu Button -->
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav class="nav-links" id="navLinks">
+            <a href="home.html">Home</a>
+            <a href="genres.html">Genres</a>
+            <a href="about.html" class="active">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="favourite.html" class="favorites-link">
+                <i class="fas fa-heart"></i> My Favorites
+            </a>
+        </nav>
+
+        <!-- User Profile / Login Status -->
+        <div class="user-menu">
+            <a href="Index.html" class="login-btn">Sign In</a>
+        </div>
+    </header>
+
+    <!-- ABOUT SECTION -->
+    <section class="about-container">
+        
+        <!-- Page Header -->
+        <div class="page-header" data-aos="fade-down">
+            <h1 class="page-title">
+                <span class="title-decoration">🎬</span>
+                About KD World
+                <span class="title-decoration">🎬</span>
+            </h1>
+            <p class="page-subtitle">Your Ultimate Destination for Korean Drama Entertainment</p>
+        </div>
+
+        <!-- Image Gallery -->
+        <div class="image-row" data-aos="fade-up">
+            <div class="card" data-aos="zoom-in" data-aos-delay="100">
+                <img src="about.jpeg" alt="K-Drama Scene">
+                <div class="card-overlay">
+                    <span>Memorable Moments</span>
+                </div>
+            </div>
+
+            <div class="card" data-aos="zoom-in" data-aos-delay="200">
+                <img src="demon (2).jpeg" alt="K-Drama Scene">
+                <div class="card-overlay">
+                    <span>Iconic Characters</span>
+                </div>
+            </div>
+
+            <div class="card" data-aos="zoom-in" data-aos-delay="300">
+                <img src="when life gives you tangerines.jpeg" alt="K-Drama Scene">
+                <div class="card-overlay">
+                    <span>Heartwarming Stories</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Introduction Text -->
+        <div class="intro-text" data-aos="fade-up">
+            <p class="intro">
+                <i class="fas fa-quote-left quote-icon"></i>
+                KD World is a dedicated platform created for all K-Drama lovers who enjoy
+                Korean dramas, emotional stories, powerful characters, and unforgettable moments.
+                <i class="fas fa-quote-right quote-icon"></i>
+            </p>
+
+            <p class="intro">
+                Our goal is to help users discover, explore, and enjoy K-Dramas easily and beautifully.
+                We believe that every drama tells a unique story that deserves to be shared with the world.
+            </p>
+        </div>
+
+        <!-- Mission & Vision -->
+        <div class="mission-vision" data-aos="fade-up">
+            <div class="mission-card" data-aos="fade-right">
+                <div class="card-icon">
+                    <i class="fas fa-bullseye"></i>
+                </div>
+                <h3>Our Mission</h3>
+                <p>To create the most comprehensive and user-friendly platform for K-Drama enthusiasts worldwide, making it easy to discover, track, and enjoy Korean dramas.</p>
+            </div>
+
+            <div class="vision-card" data-aos="fade-left">
+                <div class="card-icon">
+                    <i class="fas fa-eye"></i>
+                </div>
+                <h3>Our Vision</h3>
+                <p>To become the #1 global community for K-Drama lovers, connecting fans across cultures and sharing the beauty of Korean storytelling.</p>
+            </div>
+        </div>
+
+        <!-- What We Offer -->
+        <div class="offer-box" data-aos="fade-up">
+            <h3><i class="fas fa-gift"></i> What We Offer</h3>
+            
+            <div class="offer-grid">
+                <div class="offer-item" data-aos="flip-left" data-aos-delay="100">
+                    <i class="fas fa-fire"></i>
+                    <h4>Popular & Trending</h4>
+                    <p>Stay updated with the latest and most popular K-Dramas</p>
+                </div>
+
+                <div class="offer-item" data-aos="flip-left" data-aos-delay="200">
+                    <i class="fas fa-star"></i>
+                    <h4>Top Rated</h4>
+                    <p>Discover highly recommended dramas with user ratings</p>
+                </div>
+
+                <div class="offer-item" data-aos="flip-left" data-aos-delay="300">
+                    <i class="fas fa-film"></i>
+                    <h4>Multiple Genres</h4>
+                    <p>Romance, thriller, comedy, fantasy & more</p>
+                </div>
+
+                <div class="offer-item" data-aos="flip-left" data-aos-delay="400">
+                    <i class="fas fa-info-circle"></i>
+                    <h4>Drama Details</h4>
+                    <p>Complete cast information, reviews & synopsis</p>
+                </div>
+
+                <div class="offer-item" data-aos="flip-left" data-aos-delay="500">
+                    <i class="fas fa-heart"></i>
+                    <h4>Favorites</h4>
+                    <p>Create your personal watchlist and favorites collection</p>
+                </div>
+
+                <div class="offer-item" data-aos="flip-left" data-aos-delay="600">
+                    <i class="fas fa-users"></i>
+                    <h4>Community</h4>
+                    <p>Connect with other K-Drama fans and share reviews</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Stats Section -->
+        <div class="stats-section" data-aos="fade-up">
+            <div class="stat-item" data-aos="zoom-in">
+                <i class="fas fa-film"></i>
+                <span class="stat-number" data-target="28">0</span>
+                <span class="stat-label">Dramas</span>
+            </div>
+
+            <div class="stat-item" data-aos="zoom-in" data-aos-delay="100">
+                <i class="fas fa-users"></i>
+                <span class="stat-number" data-target="5000">0</span>
+                <span class="stat-label">Users</span>
+            </div>
+
+            <div class="stat-item" data-aos="zoom-in" data-aos-delay="200">
+                <i class="fas fa-clock"></i>
+                <span class="stat-number" data-target="24">0</span>
+                <span class="stat-label">Hours Daily</span>
+            </div>
+
+            <div class="stat-item" data-aos="zoom-in" data-aos-delay="300">
+                <i class="fas fa-smile"></i>
+                <span class="stat-number" data-target="98">0</span>
+                <span class="stat-label">Satisfaction %</span>
+            </div>
+        </div>
+
+        <!-- Team Section -->
+        <div class="team-section" data-aos="fade-up">
+            <h2><i class="fas fa-users"></i> Meet Our Team</h2>
+            
+            <div class="team-grid">
+                <div class="team-member" data-aos="fade-up" data-aos-delay="100">
+                    <div class="member-image">
+                        <img src="team1.jpg" alt="Team Member">
+                        <div class="member-social">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <h4>Kim Min-ji</h4>
+                    <p>Founder & CEO</p>
+                    <small>K-Drama Enthusiast since 2010</small>
+                </div>
+
+                <div class="team-member" data-aos="fade-up" data-aos-delay="200">
+                    <div class="member-image">
+                        <img src="team2.jpg" alt="Team Member">
+                        <div class="member-social">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <h4>Park Seo-jun</h4>
+                    <p>Content Manager</p>
+                    <small>Drama Reviewer</small>
+                </div>
+
+                <div class="team-member" data-aos="fade-up" data-aos-delay="300">
+                    <div class="member-image">
+                        <img src="team3.jpg" alt="Team Member">
+                        <div class="member-social">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <h4>Lee Ji-eun</h4>
+                    <p>Community Manager</p>
+                    <small>K-Culture Expert</small>
+                </div>
+            </div>
+        </div>
+
+        <!-- Testimonials -->
+        <div class="testimonials-section" data-aos="fade-up">
+            <h2><i class="fas fa-comments"></i> What Our Users Say</h2>
+            
+            <div class="testimonials-slider">
+                <div class="testimonial active" data-aos="fade-right">
+                    <i class="fas fa-quote-left"></i>
+                    <p>KD World helped me discover so many amazing dramas I would have never found otherwise. The recommendations are always on point!</p>
+                    <div class="testimonial-author">
+                        <strong>Sarah Kim</strong>
+                        <span>K-Drama Fan since 2020</span>
+                    </div>
+                </div>
+
+                <div class="testimonial" data-aos="fade-right">
+                    <i class="fas fa-quote-left"></i>
+                    <p>The best platform for K-Drama lovers! The favorites feature and genre filters make it so easy to find exactly what I'm looking for.</p>
+                    <div class="testimonial-author">
+                        <strong>Michael Chen</strong>
+                        <span>Premium Member</span>
+                    </div>
+                </div>
+
+                <div class="testimonial" data-aos="fade-right">
+                    <i class="fas fa-quote-left"></i>
+                    <p>I love how detailed the drama information is. The cast details and reviews help me decide what to watch next.</p>
+                    <div class="testimonial-author">
+                        <strong>Priya Sharma</strong>
+                        <span>Daily User</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+
+        <!-- Timeline -->
+        <div class="timeline-section" data-aos="fade-up">
+            <h2><i class="fas fa-history"></i> Our Journey</h2>
+            
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-year">2020</div>
+                    <div class="timeline-content">
+                        <h4>The Beginning</h4>
+                        <p>KD World was founded with a passion for Korean dramas</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-year">2022</div>
+                    <div class="timeline-content">
+                        <h4>10K Users</h4>
+                        <p>Reached 10,000 active users milestone</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-year">2024</div>
+                    <div class="timeline-content">
+                        <h4>New Features</h4>
+                        <p>Launched favorites and watchlist features</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-year">2026</div>
+                    <div class="timeline-content">
+                        <h4>Global Community</h4>
+                        <p>Now serving K-Drama fans worldwide</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CTA Section -->
+        <div class="cta-section" data-aos="fade-up">
+            <h2>Ready to Start Your K-Drama Journey?</h2>
+            <p>Join thousands of drama lovers today!</p>
+            <div class="cta-buttons">
+                <a href="filex.html" class="cta-btn primary">
+                    <i class="fas fa-user-plus"></i> Sign Up Now
+                </a>
+                <a href="genres.html" class="cta-btn secondary">
+                    <i class="fas fa-film"></i> Explore Dramas
+                </a>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>KD World</h4>
+                <p>Your ultimate destination for Korean Drama entertainment.</p>
+                <div class="footer-stats">
+                    <span><i class="fas fa-film"></i> 100+ Dramas</span>
+                    <span><i class="fas fa-users"></i> 50K+ Users</span>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                    <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    <li><a href="privacy.html"><i class="fas fa-chevron-right"></i> Privacy Policy</a></li>
+                    <li><a href="terms.html"><i class="fas fa-chevron-right"></i> Terms of Service</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Connect With Us</h4>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/" target="_blank" class="social-icon">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com/" target="_blank" class="social-icon">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://web.whatsapp.com/" target="_blank" class="social-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="https://x.com/" target="_blank" class="social-icon">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.youtube.com/" target="_blank" class="social-icon">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>© 2026 KD World | All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <!-- AOS Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- External JavaScript -->
+    <script src="about.js"></script>
+</body>
+</html>

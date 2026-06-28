@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KD World | Profile</title>
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="profile.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23d44c7f'%3E%3Cpath d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14h-2v-6h2v6zm4 0h-2v-6h2v6z'/%3E%3C/svg%3E" type="image/svg+xml">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="nav-left">
+            <div class="logo">KD WORLD</div>
+            
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="home.html" class="active">Home</a></li>
+                <li><a href="genres.html">Genres</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        
+        <!-- PROFILE DROPDOWN -->
+        <div class="profile-container">
+            <div class="profile-trigger" id="profileTrigger" aria-haspopup="true" aria-expanded="false">
+                <img src="https://ui-avatars.com/api/?name=John+Doe&background=667eea&color=fff&bold=true&size=128" 
+                     alt="Profile" 
+                     class="profile-img" 
+                     id="profileImg">
+                <span class="profile-name" id="profileName">John Doe</span>
+                <i class="fas fa-chevron-down dropdown-arrow" id="dropdownArrow"></i>
+            </div>
+
+            <!-- Profile Dropdown Menu -->
+            <div class="profile-menu" id="profileMenu" role="menu">
+                <div class="menu-header">
+                    <img src="https://ui-avatars.com/api/?name=John+Doe&background=667eea&color=fff&bold=true&size=128" 
+                         alt="User" 
+                         class="menu-header-img">
+                    <div class="menu-header-info">
+                        <h3 id="menuUserName">John Doe</h3>
+                        <p id="menuUserEmail">john.doe@kdworld.com</p>
+                        <span class="membership-badge">
+                            <i class="fas fa-crown"></i> Premium Member
+                        </span>
+                    </div>
+                </div>
+                
+                <hr class="menu-divider">
+
+                <ul class="menu-items">
+                    <li role="menuitem">
+                        <a href="profile-view.html">
+                            <span class="icon"><i class="fas fa-user-circle"></i></span>
+                            <span class="menu-text">My Profile</span>
+                            <span class="menu-badge">80%</span>
+                        </a>
+                    </li>
+                    <li role="menuitem">
+                        <a href="watchlist.html">
+                            <span class="icon"><i class="fas fa-bookmark"></i></span>
+                            <span class="menu-text">My Watchlist</span>
+                            <span class="menu-badge">12</span>
+                        </a>
+                    </li>
+                    <li role="menuitem">
+                        <a href="favourites.html">
+                            <span class="icon"><i class="fas fa-heart"></i></span>
+                            <span class="menu-text">Favourites</span>
+                            <span class="menu-badge">8</span>
+                        </a>
+                    </li>
+                    <li role="menuitem">
+                        <a href="reviews.html">
+                            <span class="icon"><i class="fas fa-star"></i></span>
+                            <span class="menu-text">My Reviews</span>
+                            <span class="menu-badge">15</span>
+                        </a>
+                    </li>
+                    <li class="menu-divider"></li>
+                    <li role="menuitem">
+                        <a href="settings.html">
+                            <span class="icon"><i class="fas fa-cog"></i></span>
+                            <span class="menu-text">Settings</span>
+                        </a>
+                    </li>
+                    <li role="menuitem">
+                        <a href="help.html">
+                            <span class="icon"><i class="fas fa-question-circle"></i></span>
+                            <span class="menu-text">Help & Support</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="menu-footer">
+                    <div class="user-stats">
+                        <div class="stat">
+                            <span class="stat-value">127</span>
+                            <span class="stat-label">Days</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-value">45</span>
+                            <span class="stat-label">Dramas</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-value">12</span>
+                            <span class="stat-label">Reviews</span>
+                        </div>
+                    </div>
+                    <a href="#" class="sign-out-btn" id="signOutBtn">
+                        <i class="fas fa-sign-out-alt"></i>
+                        Sign out
+                    </a>
+                </div>
+
+                <!-- Theme Toggle (optional) -->
+                <div class="theme-toggle" id="themeToggle">
+                    <span class="theme-text">
+                        <i class="fas fa-moon"></i>
+                        <span>Dark Mode</span>
+                    </span>
+                    <label class="switch">
+                        <input type="checkbox" id="darkModeToggle">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+        <div class="welcome-section">
+            <h1>Welcome back, <span id="welcomeName">John!</span></h1>
+            <p>Discover your next favorite K-Drama</p>
+        </div>
+
+        <!-- Quick Stats Cards -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <i class="fas fa-film"></i>
+                <div class="stat-info">
+                    <span class="stat-number">45</span>
+                    <span class="stat-title">Dramas Watched</span>
+                </div>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-clock"></i>
+                <div class="stat-info">
+                    <span class="stat-number">127</span>
+                    <span class="stat-title">Hours Watched</span>
+                </div>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-star"></i>
+                <div class="stat-info">
+                    <span class="stat-number">4.8</span>
+                    <span class="stat-title">Avg Rating</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Continue Watching Section -->
+        <section class="continue-watching">
+            <h2>Continue Watching</h2>
+            <div class="drama-grid">
+                <!-- Drama cards will be dynamically loaded -->
+            </div>
+        </section>
+    </main>
+
+    <!-- External JavaScript -->
+    <script src="profile.js"></script>
+</body>
+</html>

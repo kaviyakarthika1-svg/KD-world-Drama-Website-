@@ -1,0 +1,86 @@
+body{
+    background:#111;
+    color:white;
+    font-family:Arial;
+    margin:0;
+}
+
+.container{
+    width:80%;
+    margin:auto;
+}
+
+h1{
+    text-align:center;
+    color:#e50914;
+}
+
+.back-btn{
+    display:inline-block;
+    margin:20px 0;
+    text-decoration:none;
+    background:#444;
+    color:white;
+    padding:8px 15px;
+    border-radius:5px;
+}
+
+.top-section{
+    display:flex;
+    gap:40px;
+    align-items:flex-start;
+}
+
+.poster img{
+    width:280px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.5);
+}
+
+.info-box{
+    max-width:500px;
+    line-height:1.6;
+}
+
+.content{
+    margin-top:30px;
+}
+
+ul{
+    list-style:none;
+    padding:0;
+}
+
+li{
+    margin:6px 0;
+}
+
+.buttons{
+    margin-top:20px;
+}
+
+button{
+    border:none;
+    padding:10px 20px;
+    margin:10px 5px;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+.watch-btn{
+    background:#e50914;
+    color:white;
+}
+
+.watch-btn:hover{
+    background:#b20710;
+}
+
+.fav-btn{
+    background:#333;
+    color:white;
+}
+
+.fav-btn:hover{
+    background:#555;
+}

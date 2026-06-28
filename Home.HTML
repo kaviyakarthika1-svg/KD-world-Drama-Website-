@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KD World - Your K-Drama Destination</title>
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="home.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23d44c7f'%3E%3Cpath d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14h-2v-6h2v6zm4 0h-2v-6h2v6z'/%3E%3C/svg%3E" type="image/svg+xml">
+    
+    <!-- Font Awesome for Icons (optional) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="main-header">
+        <div class="logo-container">
+            <h3 class="logo">KD World</h3>
+        </div>
+        
+        <!-- Mobile Menu Button -->
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav class="nav-links" id="navLinks">
+            <a href="home.html" class="active">Home</a>
+            <a href="genres.html">Genres</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="favourite.html" class="favorites-link">
+                <i class="fas fa-heart"></i> My Favorites
+            </a>
+        </nav>
+
+        <!-- User Profile / Login Status -->
+        <div class="user-menu">
+            <a href="login.html" class="login-btn">Sign In</a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION with Image Slider -->
+    <section class="hero-section">
+        <div class="slider-container">
+            <div class="slider-wrapper" id="sliderWrapper">
+                <img src="KD World.png" class="hero-img active" alt="KD World Banner">
+                <img src="HERO.png" class="hero-img" alt="Korean Drama Collection">
+                <img src="HERO-2.png" class="hero-img" alt="Latest K-Dramas">
+            </div>
+            
+            <!-- Slider Controls -->
+            <button class="slider-btn prev" id="prevSlide">❮</button>
+            <button class="slider-btn next" id="nextSlide">❯</button>
+            
+            <!-- Slider Dots -->
+            <div class="slider-dots" id="sliderDots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <!-- Section Title with Animation -->
+        <div class="section-header">
+            <h2 class="section-title">
+                <span class="title-decoration">🌺</span>
+                Trending Now
+                <span class="title-decoration">🌺</span>
+            </h2>
+            <p class="section-subtitle">Most popular K-Dramas this week</p>
+        </div>
+
+        <!-- Drama Grid -->
+        <section class="drama-grid" id="dramaGrid">
+            <!-- Drama cards will be dynamically loaded here -->
+        </section>
+
+        <!-- Load More Button -->
+        <div class="load-more-container">
+            <button class="load-more-btn" id="loadMoreBtn">Load More Dramas</button>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>KD World</h4>
+                <p>Your ultimate destination for Korean Drama entertainment.</p>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                    <li><a href="terms.html">Terms of Service</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Connect With Us</h4>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/" target="_blank" class="social-icon">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com/" target="_blank" class="social-icon">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://web.whatsapp.com/" target="_blank" class="social-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="https://x.com/" target="_blank" class="social-icon">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.youtube.com/" target="_blank" class="social-icon">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>© 2026 KD World | All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <!-- External JavaScript -->
+    <script src="home.js"></script>
+</body>
+</html>

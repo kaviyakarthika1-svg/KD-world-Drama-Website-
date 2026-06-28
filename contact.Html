@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KD World - Contact Us</title>
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="contact.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23d44c7f'%3E%3Cpath d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14h-2v-6h2v6zm4 0h-2v-6h2v6z'/%3E%3C/svg%3E" type="image/svg+xml">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="main-header">
+        <div class="logo-container">
+            <h3 class="logo">KD World</h3>
+        </div>
+        
+        <!-- Mobile Menu Button -->
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav class="nav-links" id="navLinks">
+            <a href="home.html">Home</a>
+            <a href="genres.html">Genres</a>
+            <a href="about.html">About</a>
+            <a href="contact.html" class="active">Contact</a>
+            <a href="favourite.html" class="favorites-link">
+                <i class="fas fa-heart"></i> My Favorites
+            </a>
+        </nav>
+
+        <!-- User Profile / Login Status -->
+        <div class="user-menu">
+            <a href="Index.html" class="login-btn">Sign In</a>
+        </div>
+    </header>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact-container">
+        
+        <!-- Page Header -->
+        <div class="page-header">
+            <h1 class="page-title">
+                <span class="title-decoration">📞</span>
+                Contact Us
+                <span class="title-decoration">📞</span>
+            </h1>
+            <p class="page-subtitle">We'd love to hear from you! Get in touch with us anytime.</p>
+        </div>
+
+        <!-- Contact Cards -->
+        <div class="contact-cards">
+            <div class="contact-card" data-aos="fade-up">
+                <div class="card-icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <h3>Email Us</h3>
+                <p><a href="mailto:kd@drama.com">kd@drama.com</a></p>
+                <p><a href="mailto:support@kdworld.com">support@kdworld.com</a></p>
+                <small>24/7 Support</small>
+            </div>
+
+            <div class="contact-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="card-icon">
+                    <i class="fas fa-phone-alt"></i>
+                </div>
+                <h3>Call Us</h3>
+                <p><a href="tel:+919876543210">+91 98765 43210</a></p>
+                <p><a href="tel:+914412345678">+91 44 1234 5678</a></p>
+                <small>Mon - Sat, 9:00 AM - 6:00 PM</small>
+            </div>
+
+            <div class="contact-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="card-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <h3>Visit Us</h3>
+                <p>123 Drama Street,</p>
+                <p>Chennai, Tamil Nadu,</p>
+                <p>India - 600001</p>
+            </div>
+
+            <div class="contact-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="card-icon">
+                    <i class="fas fa-clock"></i>
+                </div>
+                <h3>Working Hours</h3>
+                <p>Monday - Saturday</p>
+                <p>9:00 AM - 6:00 PM</p>
+                <p>Sunday: Closed</p>
+            </div>
+        </div>
+
+        <!-- Contact Form & Image Section -->
+        <div class="contact-form-wrapper">
+            <!-- LEFT SIDE (FORM) -->
+            <div class="contact-form" data-aos="fade-right">
+                <h2>Send Us a Message</h2>
+                <p class="form-subtitle">We'll get back to you within 24 hours</p>
+                
+                <form id="contactForm" novalidate>
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Your Full Name" required>
+                        <i class="fas fa-user input-icon"></i>
+                        <div class="error-message" id="nameError">Name must be at least 2 characters</div>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Your Email Address" required>
+                        <i class="fas fa-envelope input-icon"></i>
+                        <div class="error-message" id="emailError">Please enter a valid email address</div>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" id="subject" placeholder="Subject" required>
+                        <i class="fas fa-tag input-icon"></i>
+                        <div class="error-message" id="subjectError">Subject is required</div>
+                    </div>
+
+                    <div class="form-group">
+                        <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                        <i class="fas fa-comment textarea-icon"></i>
+                        <div class="error-message" id="messageError">Message must be at least 10 characters</div>
+                    </div>
+
+                    <button type="submit" id="submitBtn">
+                        <span class="btn-text">Send Message</span>
+                        <span class="btn-icon"><i class="fas fa-paper-plane"></i></span>
+                    </button>
+                </form>
+
+                <!-- Form Status Messages -->
+                <div class="form-status" id="formStatus"></div>
+            </div>
+
+            <!-- RIGHT SIDE (IMAGE COLLAGE) -->
+            <div class="form-image" data-aos="fade-left">
+                <div class="image-collage">
+                    <div class="collage-item main">
+                        <img src="kd.jpeg" alt="KD World Drama">
+                        <div class="image-overlay">
+                            <span>Korean Dramas</span>
+                        </div>
+                    </div>
+                    <div class="collage-item small">
+                        <img src="okey dokey oh.jpeg" alt="Okey Dokey Oh">
+                        <div class="image-overlay">
+                            <span>K-Drama</span>
+                        </div>
+                    </div>
+                    <div class="collage-item small">
+                        <img src="okey dokey oh.jpeg" alt="Drama Scene">
+                        <div class="image-overlay">
+                            <span>Latest</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="image-caption">Your favorite K-Dramas await!</p>
+            </div>
+        </div>
+
+        <!-- FAQ Section (New) -->
+        <div class="faq-section" data-aos="fade-up">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>How can I get support for technical issues?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        You can reach our technical support team 24/7 via email at support@kdworld.com or call us during business hours.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Do you offer customer support in multiple languages?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Yes! We provide support in English, Korean, Japanese, and Chinese languages.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>How long does it take to get a response?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        We typically respond to all inquiries within 24 hours during business days.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Can I schedule a video call consultation?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        Absolutely! Please email us to schedule a video call consultation at your convenience.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Google Map -->
+        <div class="map" data-aos="fade-up">
+            <h2><i class="fas fa-map-marked-alt"></i> Our Location</h2>
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d497511.114633752!2d79.92880275!3d13.0475255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5265ea4f7d3361%3A0x6e61a70b9f3c96ed!2sChennai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
+                    width="100%" 
+                    height="350" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+            <div class="map-actions">
+                <a href="https://maps.google.com/?q=Chennai,TamilNadu" target="_blank" class="map-btn">
+                    <i class="fas fa-directions"></i> Get Directions
+                </a>
+            </div>
+        </div>
+
+        <!-- Newsletter Section (New) -->
+        <div class="newsletter-section" data-aos="fade-up">
+            <div class="newsletter-content">
+                <h2>Subscribe to Our Newsletter</h2>
+                <p>Get the latest K-Drama updates, news, and exclusive offers directly in your inbox!</p>
+                <form id="newsletterForm" class="newsletter-form">
+                    <div class="newsletter-input-group">
+                        <input type="email" id="newsletterEmail" placeholder="Enter your email address" required>
+                        <button type="submit">
+                            <i class="fas fa-bell"></i> Subscribe
+                        </button>
+                    </div>
+                    <div class="newsletter-status" id="newsletterStatus"></div>
+                </form>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>KD World</h4>
+                <p>Your ultimate destination for Korean Drama entertainment.</p>
+                <div class="footer-stats">
+                    <span><i class="fas fa-film"></i> 100+ Dramas</span>
+                    <span><i class="fas fa-users"></i> 50K+ Users</span>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                    <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    <li><a href="privacy.html"><i class="fas fa-chevron-right"></i> Privacy Policy</a></li>
+                    <li><a href="terms.html"><i class="fas fa-chevron-right"></i> Terms of Service</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <ul class="contact-info">
+                    <li><i class="fas fa-phone"></i> +91 98765 43210</li>
+                    <li><i class="fas fa-envelope"></i> kd@drama.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Chennai, India</li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Connect With Us</h4>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/" target="_blank" class="social-icon">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com/" target="_blank" class="social-icon">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://web.whatsapp.com/" target="_blank" class="social-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="https://x.com/" target="_blank" class="social-icon">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.youtube.com/" target="_blank" class="social-icon">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>© 2026 KD World | All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <!-- External JavaScript -->
+    <script src="contact.js"></script>
+</body>
+</html>

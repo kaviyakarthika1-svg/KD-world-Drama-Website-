@@ -1,0 +1,239 @@
+print("Hello World")
+output
+"Hello World"
+=================
+
+x=10
+print(type(x))
+y=4.5
+z="Hello"
+print(type(y))
+print(type(z))
+
+output
+<class 'int'>
+<class 'float'>
+<class 'str'>
+
+=================
+print("Data type")
+a=7
+b=7.3
+c=3+2j
+print(type(a))
+print(type(b))
+print(type(c))
+
+print("type casting")
+x=5
+y=3.1
+z="hema"
+print(type(x))
+print(type(y))
+print(type(z))
+
+print("string")
+e="kaviya"
+f='bhavani'
+print(type(e))
+print(type(f))
+
+print("sequence type")
+u=[1,2,3]
+v=(2,3)
+print(type(u))
+print(type(v))
+
+print("mapping type")
+
+output
+Data type
+<class 'int'>
+<class 'float'>
+<class 'complex'>
+type casting
+<class 'int'>
+<class 'float'>
+<class 'str'>
+string
+<class 'str'>
+<class 'str'>
+sequence type
+<class 'list'>
+<class 'tuple'>
+mapping type
+=================
+x=10
+print(type(x))
+y=4.5
+z="Hello"
+print(type(y))
+print(type(z))
+
+output:
+<class 'int'>
+<class 'float'>
+<class 'str'>
+=================
+x=2
+print(type(x))
+y=float(x)
+print(type(y))
+z=2.5
+f=x+z
+print(f)
+print(type(f))
+
+print("OPerators")
+a=4
+b=1
+print(a+b)
+print(a-b)
+print(a*b)
+print(a/b)
+print(a//b)
+print(a%b)
+print(a**b)
+
+#logical operators
+a=2
+b=3
+print(a>b and a==b)
+print(a<b and a==b)
+print()
+
+
+print("Data type")
+a=7
+b=7.3
+c=3+2j
+print(type(a))
+print(type(b))
+print(type(c))
+
+output:
+Data type
+<class 'int'>
+<class 'float'>
+<class 'complex'>
+
+output:
+<class 'int'>
+<class 'float'>
+4.5
+<class 'float'>
+OPerators
+5
+3
+4
+4.0
+4
+0
+4
+False
+False
+=================
+
+#Bitwise operators
+x=4
+y=2
+print(x&y)
+print(x|y)
+a=[1,2,3,4]
+print(1 is a)
+print(1 is not a)
+print(1 in a)
+print(1 not in a)
+b=a
+c=[1,2,3,]
+print(a is b)
+print(a==c)
+
+0
+6
+False
+True
+True
+False
+True
+False
+=================
+
+#strings
+s="python"
+print(len(s))
+#index
+print(s[-3])
+#Substring
+print(s[0:4])
+#uppercase
+print(s.upper())
+print(s.upper()[1])
+print(s[1].upper())
+#lowercase
+print(s.lower())
+print(s.lower()[2])
+#concatenation
+a="Hello"
+b="Hi"
+print(a+b)
+print(a+" "+b)
+print(a+"*"+b)
+print(a+" Language")
+#code1
+x='"Hello"'
+y='"World"'
+print(x+" "+y+" "'"!"')
+#code2
+z='"!"'
+print(x+" "+y+" "+z)
+#code3
+print('"Hello"','"World"', '"!"')
+#code4
+a=input()
+b=input()
+c=input()
+print('"'+a+'"'+" "+'"'+b+'"'+" "+'"'+c+'"')
+#code5
+a=input()
+b=input()
+c=input()
+d='"'
+e=" "
+print(d+a+d+e+d+b+d+e+d+c+d)
+#repetition
+print(s*2)
+#membership
+print("p" in s)
+#formatting
+name="welcome"
+print(f"Hello {name}")
+
+<output>
+6
+h
+pyth
+PYTHON
+Y
+Y
+python
+t
+HelloHi
+Hello Hi
+Hello*Hi
+Hello Language
+"Hello" "World" "!"
+"Hello" "World" "!"
+"Hello" "World" "!"
+Hello
+World
+!
+"Hello" "World" "!"
+Hello
+World
+!
+"Hello" "World" "!"
+pythonpython
+True
+Hello welcome
+=================

@@ -1,0 +1,100 @@
+body{
+    background-color:#111;
+    color:white;
+    font-family:Arial, Helvetica, sans-serif;
+    margin:0;
+}
+
+/* Main container */
+.container{
+    width:80%;
+    margin:auto;
+}
+
+/* Page title */
+h1{
+    text-align:center;
+    color:#e50914;
+}
+
+/* Back button */
+.back-btn{
+    display:inline-block;
+    margin:20px 0;
+    text-decoration:none;
+    background:#444;
+    color:white;
+    padding:8px 15px;
+    border-radius:6px;
+}
+
+/* Layout for poster and info */
+.top-section{
+    display:flex;
+    gap:40px;
+    align-items:flex-start;
+}
+
+/* Poster image */
+.poster img{
+    width:280px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.6);
+}
+
+/* Right side content */
+.info-box{
+    max-width:500px;
+    line-height:1.6;
+}
+
+/* Synopsis section */
+.content{
+    margin-top:30px;
+    line-height:1.7;
+}
+
+/* Cast list */
+ul{
+    list-style:none;
+    padding:0;
+}
+
+li{
+    margin:6px 0;
+}
+
+/* Buttons area */
+.buttons{
+    margin-top:20px;
+}
+
+/* Button design */
+button{
+    border:none;
+    padding:10px 20px;
+    margin:10px 5px;
+    border-radius:6px;
+    cursor:pointer;
+    font-size:14px;
+}
+
+/* Watch button */
+.watch-btn{
+    background:#e50914;
+    color:white;
+}
+
+.watch-btn:hover{
+    background:#b20710;
+}
+
+/* Favorite button */
+.fav-btn{
+    background:#333;
+    color:white;
+}
+
+.fav-btn:hover{
+    background:#555;
+}

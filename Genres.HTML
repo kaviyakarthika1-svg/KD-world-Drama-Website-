@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KD World | Drama Genres</title>
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="genres.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23d44c7f'%3E%3Cpath d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14h-2v-6h2v6zm4 0h-2v-6h2v6z'/%3E%3C/svg%3E" type="image/svg+xml">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="main-header">
+    <div class="logo-container">
+        <h3 class="logo">KD World</h3>
+    </div>
+    
+    <!-- Mobile Menu Button -->
+    <button class="mobile-menu-btn" id="mobileMenuBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <nav class="nav-links" id="navLinks">
+        <a href="home.html">Home</a>
+        <a href="genres.html" class="active">Genres</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="favourite.html" class="favorites-link">
+            <i class="fas fa-heart"></i> My Favorites
+        </a>
+    </nav>
+
+    <!-- User Profile / Login Status -->
+    <div class="user-menu">
+        <a href="Index.html" class="login-btn">Sign In</a>
+    </div>
+</header>
+
+<!-- SEARCH SECTION -->
+<div class="search-section">
+    <div class="search-container">
+        <i class="fas fa-search search-icon"></i>
+        <input 
+            type="text" 
+            id="searchBar" 
+            placeholder="Search dramas by title, genre, or actor..."
+            autocomplete="off"
+        >
+        <button id="clearSearch" class="clear-search" style="display: none;">
+            <i class="fas fa-times"></i>
+        </button>
+    </div>
+    <div class="search-results" id="searchResults"></div>
+</div>
+
+<!-- FILTER TAGS -->
+<div class="filter-tags">
+    <button class="filter-tag active" data-filter="all">All</button>
+    <button class="filter-tag" data-filter="romance">❤️ Romance</button>
+    <button class="filter-tag" data-filter="thriller">🕵️ Thriller</button>
+    <button class="filter-tag" data-filter="comedy">😂 Rom-com</button>
+    <button class="filter-tag" data-filter="action">💥 Action</button>
+    <button class="filter-tag" data-filter="medical">🏥 Medical</button>
+    <button class="filter-tag" data-filter="horror">👻 Horror</button>
+</div>
+
+<main class="container">
+    <h1 class="page-title">
+        <span class="title-decoration">🎬</span>
+        Explore Drama Genres
+        <span class="title-decoration">🎬</span>
+    </h1>
+    
+    <p class="page-subtitle">Discover Korean Dramas by your favorite genres</p>
+
+    <!-- DYNAMIC GENRE SECTIONS WILL BE POPULATED BY JAVASCRIPT -->
+    <div id="genresContainer"></div>
+
+    <!-- NO RESULTS MESSAGE -->
+    <div class="no-results" id="noResults" style="display: none;">
+        <i class="fas fa-search"></i>
+        <h3>No dramas found</h3>
+        <p>Try adjusting your search or filter to find what you're looking for.</p>
+        <button id="clearFiltersBtn" class="clear-filters-btn">Clear All Filters</button>
+    </div>
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h4>KD World</h4>
+            <p>Your ultimate destination for Korean Drama entertainment.</p>
+            <div class="footer-stats">
+                <span><i class="fas fa-film"></i> 100+ Dramas</span>
+                <span><i class="fas fa-users"></i> 50K+ Users</span>
+            </div>
+        </div>
+        
+        <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="about.html"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                <li><a href="privacy.html"><i class="fas fa-chevron-right"></i> Privacy Policy</a></li>
+                <li><a href="terms.html"><i class="fas fa-chevron-right"></i> Terms of Service</a></li>
+            </ul>
+        </div>
+        
+        <div class="footer-section">
+            <h4>Popular Genres</h4>
+            <div class="popular-genres">
+                <a href="#romance">❤️ Romance</a>
+                <a href="#thriller">🕵️ Thriller</a>
+                <a href="#comedy">😂 Comedy</a>
+                <a href="#action">💥 Action</a>
+            </div>
+        </div>
+        
+        <div class="footer-section">
+            <h4>Connect With Us</h4>
+            <div class="social-links">
+                <a href="https://www.instagram.com/" target="_blank" class="social-icon">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/" target="_blank" class="social-icon">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://web.whatsapp.com/" target="_blank" class="social-icon">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="https://x.com/" target="_blank" class="social-icon">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.youtube.com/" target="_blank" class="social-icon">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer-bottom">
+        <p>© 2026 KD World | All Rights Reserved</p>
+    </div>
+</footer>
+
+<!-- External JavaScript -->
+<script src="genres.js"></script>
+</body>
+</html>

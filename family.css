@@ -1,0 +1,137 @@
+/* ===============================
+   Global Style
+=================================*/
+
+body{
+    background-color:#111;
+    color:white;
+    font-family:Arial, Helvetica, sans-serif;
+    margin:0;
+}
+
+/* Main container */
+
+.container{
+    width:80%;
+    margin:auto;
+    padding-bottom:40px;
+}
+
+/* Page Title */
+
+h1{
+    text-align:center;
+    color:#e50914;
+    margin-bottom:30px;
+}
+
+/* Back Button */
+
+.back-btn{
+    display:inline-block;
+    margin:20px 0;
+    text-decoration:none;
+    background:#444;
+    color:white;
+    padding:8px 15px;
+    border-radius:6px;
+    transition:0.3s;
+}
+
+.back-btn:hover{
+    background:#666;
+}
+
+/* ===============================
+   Top Section Layout
+=================================*/
+
+.top-section{
+    display:flex;
+    gap:40px;
+    align-items:flex-start;
+}
+
+/* Poster Image */
+
+.poster img{
+    width:280px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.6);
+}
+
+/* Drama Info */
+
+.info-box{
+    max-width:500px;
+    line-height:1.6;
+}
+
+/* Sub Headings */
+
+h3{
+    margin-top:15px;
+    color:#ffb3b3;
+}
+
+/* ===============================
+   Synopsis Section
+=================================*/
+
+.content{
+    margin-top:30px;
+    line-height:1.7;
+}
+
+/* ===============================
+   Cast List
+=================================*/
+
+ul{
+    list-style:none;
+    padding:0;
+}
+
+li{
+    margin:6px 0;
+}
+
+/* ===============================
+   Buttons
+=================================*/
+
+.buttons{
+    margin-top:20px;
+}
+
+button{
+    border:none;
+    padding:10px 20px;
+    margin:10px 5px;
+    border-radius:6px;
+    cursor:pointer;
+    font-size:14px;
+    transition:0.3s;
+}
+
+/* Watch Button */
+
+.watch-btn{
+    background:#e50914;
+    color:white;
+}
+
+.watch-btn:hover{
+    background:#b20710;
+}
+
+/* Favourite Button */
+
+.fav-btn{
+    background:#333;
+    color:white;
+}
+
+.fav-btn:hover{
+    background:#555;
+}
