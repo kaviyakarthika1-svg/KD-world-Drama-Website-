@@ -175,7 +175,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 // Redirect to home page
                 setTimeout(() => {
-                    window.location.href = 'Home.HTML';
+                    window.location.href = 'home.html';
                 }, 1500);
             } else {
                 // Show error message
