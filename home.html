@@ -5,25 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KD World - Your K-Drama Destination</title>
     
-    <!-- External CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="home.css">
     
-    <!-- Favicon -->
     <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23d44c7f'%3E%3Cpath d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14h-2v-6h2v6zm4 0h-2v-6h2v6z'/%3E%3C/svg%3E" type="image/svg+xml">
     
-    <!-- Font Awesome for Icons (optional) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body>
 
-    <!-- HEADER -->
     <header class="main-header">
         <div class="logo-container">
             <h3 class="logo">KD World</h3>
         </div>
         
-        <!-- Mobile Menu Button -->
         <button class="mobile-menu-btn" id="mobileMenuBtn">
             <span></span>
             <span></span>
@@ -40,26 +37,22 @@
             </a>
         </nav>
 
-        <!-- User Profile / Login Status -->
         <div class="user-menu">
-            <a href="login.html" class="login-btn">Sign In</a>
+            <a href="index.html" class="login-btn">Sign In</a>
         </div>
     </header>
 
-    <!-- HERO SECTION with Image Slider -->
     <section class="hero-section">
         <div class="slider-container">
             <div class="slider-wrapper" id="sliderWrapper">
-                <img src="KD World.png" class="hero-img active" alt="KD World Banner">
-                <img src="HERO.png" class="hero-img" alt="Korean Drama Collection">
-                <img src="HERO-2.png" class="hero-img" alt="Latest K-Dramas">
+                <img src="KD World.png" class="hero-img active" alt="KD World Banner" onerror="this.src='https://images.unsplash.com/photo-1536440136628-849c177e76a1?q=80&w=1470'">
+                <img src="HERO.png" class="hero-img" alt="Korean Drama Collection" onerror="this.src='https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?q=80&w=1470'">
+                <img src="HERO-2.png" class="hero-img" alt="Latest K-Dramas" onerror="this.src='https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?q=80&w=1470'">
             </div>
             
-            <!-- Slider Controls -->
             <button class="slider-btn prev" id="prevSlide">❮</button>
             <button class="slider-btn next" id="nextSlide">❯</button>
             
-            <!-- Slider Dots -->
             <div class="slider-dots" id="sliderDots">
                 <span class="dot active"></span>
                 <span class="dot"></span>
@@ -68,9 +61,7 @@
         </div>
     </section>
 
-    <!-- MAIN CONTENT -->
     <main>
-        <!-- Section Title with Animation -->
         <div class="section-header">
             <h2 class="section-title">
                 <span class="title-decoration">🌺</span>
@@ -80,18 +71,14 @@
             <p class="section-subtitle">Most popular K-Dramas this week</p>
         </div>
 
-        <!-- Drama Grid -->
         <section class="drama-grid" id="dramaGrid">
-            <!-- Drama cards will be dynamically loaded here -->
-        </section>
+            </section>
 
-        <!-- Load More Button -->
         <div class="load-more-container">
             <button class="load-more-btn" id="loadMoreBtn">Load More Dramas</button>
         </div>
     </main>
 
-    <!-- FOOTER -->
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-section">
@@ -136,7 +123,6 @@
         </div>
     </footer>
 
-    <!-- External JavaScript -->
     <script src="home.js"></script>
 </body>
 </html>
